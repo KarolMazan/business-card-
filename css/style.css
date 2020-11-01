@@ -28,7 +28,9 @@ body {
 }
 .person__photo {
     margin-right: 32px;
-
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .person__name {
     margin: 0;
@@ -49,11 +51,31 @@ body {
     font-size: 16px;
     line-height: 22px;
 }
-.person__special {
-    color: #ED6D05;
-    font-weight: normal;
+.font__big  {
+    color: red;
+    font-weight: bolder;
+}
+.font__small {
+    color: red;
+    font-size: 75%;
+}
+@keyframes number {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1,2);
+        }
+        100% {
+            transform:scale(1) ;
+        }
+}
+.magic__number {
+    display: inline-block;
+    animation: number 1s ease-in infinite;
+    color:orangered;
 }
 .person__link {
-    color: #E20613;
+    color:purple;
     text-decoration: none;
 }
