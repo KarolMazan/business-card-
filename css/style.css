@@ -5,6 +5,7 @@ html {
 *, *:after, *:before {
     box-sizing: inherit;
 }
+
 body {
     background-color: #2C2141;
     min-height: 100vh;
@@ -22,60 +23,69 @@ body {
     width: 100%;
     padding: 32px;
 }
+
 .person {
     display: flex;
     align-items: flex-start;
 }
+
 .person__photo {
     margin-right: 32px;
     border-radius: 15px;
     border: 1px solid #000000;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .person__name {
     margin: 0;
     font-weight: normal;
     font-size: 36px;
-    
 }
+
 .person__position {
     color: #545454;
     font-style: italic;
     font-size: 18px;
-
 }
+
 .person__header {
     margin-bottom: 32px;
 }
+
 .person__description {
     font-size: 16px;
     line-height: 22px;
 }
-.font__big  {
+
+.font__big {
     color: red;
     font-weight: bolder;
 }
+
 .font__small {
     color: red;
     font-size: 75%;
 }
+
 @keyframes number {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1,2);
-        }
-        100% {
-            transform:scale(1) ;
-        }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1, 2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
+
 .magic__number {
     display: inline-block;
     animation: number 1s ease-in infinite;
-    color:orangered;
+    color: orangered;
 }
+
 .person__link {
-    color:purple;
+    color: purple;
     text-decoration: none;
 }
