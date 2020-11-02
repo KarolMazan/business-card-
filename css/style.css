@@ -82,10 +82,15 @@ body {
 .magic__number {
     display: inline-block;
     animation: number 1s ease-in infinite;
-    color: orangered;
+    color: red;
 }
 
 .person__link {
     color: purple;
     text-decoration: none;
+}
+@media (max-width: 644px) {
+    .person {
+        display:inline-grid;
+    }
 }
